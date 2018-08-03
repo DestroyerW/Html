@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米商城</title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        #phone{
+            height: 100%;
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            margin: 0;
+        }
+        #price{
+            height: 50px;
+            background-color: #ff533f;
+            display: flex;
+            position: relative;
+        }
+        #order{
+            height: 100%;
+            width: 33%;
+            background-color: #ffe655;
+            position: absolute;
+            right: 0;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        #price h1,span{
+            margin: 0 15px!important;
+            line-height: 50px;
+        }
+        #p_det{
+            margin: 8px;
+        }
+        h2{
+            font-weight: initial;
+            margin: 8px 0
+        }
+        span{
+            color: #ff6700;
+            margin:0;
+        }
+        .sel,.del{
+            display: flex; justify-content: space-around;
+        }
+        .del_t{
+            display: flex;
+            flex-direction: column;
+        }
+        .del_t h1,.del_t  h2{
+            text-align: center;
+        }
+        .del_t p{
+            text-align: center;
+            font-size: 10px;
+        }
+        .del_t h4{
+            margin:20px;
+            font-weight: inherit;
+            color: #7f7f7c;
+        }
+    </style>
+</head>
+<body>
+    <div id="phone">
+        <img src="images/1.jpg" alt="">
+        <div id="price"><h1 style="color: white">￥3299</h1><div id="order"><span style="color: #ff6700">预约已结束</span></div></div>
+        <div id="p_det">
+            <h2>小米MIX 2S</h2>
+            <p><span>今日早10点 首卖 </span> 搭载高通骁龙845年度旗舰处理器/AI超感光双摄，DxO百分相机/艺术品般陶瓷机身</p>
+            <h1 style="color: #ff6700">￥3299</h1>
+        </div>
+        <div>
+            <div class="sel"><p>已选</p><p>小米MIX 2S 6G+64GB 黑色 x1</p></div>
+            <div class="sel"><p style="margin-left: 12px">送至</p><p>北京市 东城区</p><span>该地区暂时缺货</span></div>
+            <p style="margin-left: 50px">支持7天无理由退货</p>
+        </div>
+        <div>
+        <div class="del"><span>概述</span><span>参数</span></div>
+            <div class="del_t">
+            <h1>小米MIX</h1>
+            <h2>一面科技，已满艺术</h2>
+            <p>骁龙845 旗舰处理器 | AI 双摄相机 | 艺术品般的陶瓷机身</p>
+        <img src="images/2.jpg" alt="">
+            <h2>全面屏 + 四曲面陶瓷</h2>
+            <h2>手机中的艺术品</h2>
+            <h4>自小米MIX发布以来，不仅先后斩获多项国际大奖，更被多家世界级博物馆收藏。如此全方位、多领域的高度认可，小米MIX 系列堪称手机中的艺术品</h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

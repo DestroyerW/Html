@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学生管理系统</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <style>
+
+        body{
+            width: 100%;
+            margin: 0;
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        header{
+            height: 50px;
+            background-color: black;
+            color: darkgray;
+            line-height: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        header span{
+            margin-left: 14px;
+        }
+        i{
+            margin-right: 12px;
+            color: white;
+        }
+        h3{
+            height: 58px;
+            margin: 0;
+            line-height: 58px;
+        }
+        h4{
+            margin: 0;
+            font-size: 15px;
+        }
+        span{
+            margin: 0 5px;
+        }
+        main{
+            width: 100%;
+            margin: 0 14px;
+        }
+        .input{
+            height: 32px;
+            width: 85%;
+            margin: 8px auto;
+        }
+        .input:focus{
+            box-shadow: 0px 0px 3px lightseagreen;
+        }
+        .input_last{
+            height: 76px;
+            width: 85%;
+            margin: 8px auto;
+            color: #999999;
+        }
+        .input_last:focus{
+            box-shadow: 0 0 3px lightseagreen;
+        }
+        .radio_sex{
+            margin: 8px auto;
+        }
+        button{
+            height: 32px;
+            width: 87%;
+            margin: 8px auto;
+            color: white;
+            background-color: cadetblue;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: lightcoral;
+        }
+        footer{
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        p{
+            color: #666666;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header><span>学生管理系统</span><i class="iconfont icon-hanbaocaidan"></i></header>
+    <main>
+        <h3>添加学生信息</h3>
+        <form>
+            <h4>姓名:</h4>
+            <input type="text" name="name" class="input" placeholder="请填写学生姓名">
+            <h4>性别:</h4>
+            <div class="radio_sex">
+                <input type="radio" name="sex" value="male"><span>男</span>
+                <input type="radio" name="sex" value="female"><span>女</span>
+            </div>
+            <h4>年龄:</h4>
+            <select name="age" class="input">
+            <option value="volvo">17</option>
+            <option value="saab">18</option>
+            <option value="fiat">19</option>
+            <option value="audi">20</option>
+            <option value="audi">21</option>
+            <option value="audi">22</option>
+            </select>
+            <h4>手机号:</h4>
+            <input type="text" name="phone" class="input" placeholder="请填写手机号">
+            <h4>电子邮箱:</h4>
+            <input type="email" name="email" class="input" placeholder="请输入电子邮箱地址">
+            <h4>备注:</h4>
+            <textarea rows="10" cols="30" class="input_last" placeholder="请填写学生其它信息"></textarea>
+            <div><button>提交</button></div>
+        </form>
+    </main>
+    <footer>
+        <p>版权所有</p>
+        <p>Liter.WU</p>
+    </footer>
+</body>
+</html>
